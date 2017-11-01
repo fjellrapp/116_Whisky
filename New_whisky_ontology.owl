@@ -151,17 +151,13 @@
 
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Age -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Age">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Age"/>
     
 
 
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Alcohol_percentage -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Alcohol_percentage">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Alcohol_percentage"/>
     
 
 
@@ -232,7 +228,6 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Colour -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Colour">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
         <rdfs:comment>Colour of whiskey</rdfs:comment>
     </owl:Class>
     
@@ -264,9 +259,7 @@
 
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
     
 
 
@@ -595,7 +588,6 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
         <rdfs:comment>Types of whiskey</rdfs:comment>
     </owl:Class>
     
