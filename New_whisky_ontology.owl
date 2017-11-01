@@ -36,7 +36,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledBy">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distills"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
     </owl:ObjectProperty>
     
@@ -58,7 +58,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledTo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ingredient"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:ObjectProperty>
     
 
@@ -75,7 +75,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasColor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasColor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Colour"/>
     </owl:ObjectProperty>
     
@@ -172,7 +172,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Blended -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Blended">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -180,7 +180,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bourbon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bourbon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -189,6 +189,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:comment>Types of whiskey</rdfs:comment>
     </owl:Class>
     
 
@@ -211,9 +212,7 @@
 
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask"/>
     
 
 
@@ -244,7 +243,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Corn_whiskey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Corn_whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -265,9 +264,7 @@
 
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
     
 
 
@@ -298,7 +295,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grain_whiskey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grain_whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -330,7 +327,6 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ingredient -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ingredient">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
         <rdfs:comment>Ingredients used in the destillation of whiskey</rdfs:comment>
     </owl:Class>
     
@@ -403,7 +399,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Malt_whiskey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Malt_whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -524,7 +520,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rye_whiskey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rye_whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -532,7 +528,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Single_pot_still_whiskey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Single_pot_still_whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -564,7 +560,7 @@
     <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tennessee_whiskey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tennessee_whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
     </owl:Class>
     
 
@@ -581,14 +577,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Treacle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Colour"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type">
-        <rdfs:comment>Types of whiskey</rdfs:comment>
     </owl:Class>
     
 
@@ -867,7 +855,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Colour"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Type"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
