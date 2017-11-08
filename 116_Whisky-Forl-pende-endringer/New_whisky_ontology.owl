@@ -1,0 +1,1774 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#"
+     xml:base="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey">
+        <rdfs:comment></rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey_Ingredients"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#distilledTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey_Ingredients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasColour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasColour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasContained -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasContained">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#madeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#madeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#maturedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#maturedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#producedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#producedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#storedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#storedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasAlcoholicContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasAlcoholicContent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0%</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100%</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Alcoholic content between 0 and 100% in ABV</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasBottleSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#hasBottleSize">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Bottle size over 0 litres, and below below or equals 1 litres</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+        <rdfs:comment>Types of whiskey</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask">
+        <rdfs:comment>Different cask types for storing whisky</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid">
+        <rdfs:isDefinedBy>The previous contents of the casks in which the whisky is stored</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Location"/>
+        <rdfs:comment>The whiskey&apos;s country of origin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#ValueSet"/>
+        <rdfs:isDefinedBy>A place where the whiskey is distilled</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grain_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grain_ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey_Ingredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Location">
+        <rdfs:comment>The location in which the whisky is produced</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#ValueSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Location"/>
+        <rdfs:comment>distillery regions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#ValueSet"/>
+        <rdfs:comment>Whiskey tasting notes. Class for the different tastes of whiskey</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#ValueSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#ValueSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property">
+        <rdfs:comment>Colour of whiskey</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey_Ingredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Whiskey_Ingredients">
+        <rdfs:comment>Ingredients used in the destillation of whiskey</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Aberlour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Aberlour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Alcohol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Almonds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Almonds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Amarone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Amarone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#American_white_oak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#American_white_oak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Material"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Amontillado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Amontillado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Amontillado_sherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Amontillado_sherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Anise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Anise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ardbeg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ardbeg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Argentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Argentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Austria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Austria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Banana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Barley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Barley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Barolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Barolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Belgium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Belgium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ben_Nevis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ben_Nevis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Berry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Berry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Blackberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Blackberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Blended -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Blended">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bonfire_smoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bonfire_smoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bourbon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bourbon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bowmore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bowmore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Buffalo_Trace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Buffalo_Trace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Burgundy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Burgundy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#California -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#California">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Campbeltown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Campbeltown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Caramel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Caramel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Chardonnay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Chardonnay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Chilli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Chilli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cinnamon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cinnamon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Clove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Clove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Coconut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Coconut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Copper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Copper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Corn_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Corn_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Corsica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Corsica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Czech_Republic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Czech_Republic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Dark_Chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Dark_Chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Date -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Date">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Denmark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Denmark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Dried_fruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Dried_fruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Dufftown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Dufftown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#European_oak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#European_oak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Material"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fig -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Finland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Finland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fino_sherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fino_sherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Floral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Floral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Four_Roses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Four_Roses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Fruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Full_gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Full_gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Gin_clear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Gin_clear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ginger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ginger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Glenmorangie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Glenmorangie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grain_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grain_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grapefruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grapefruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Grass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Green_apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Green_apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Hammerschmiede -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Hammerschmiede">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Hay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Hay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Hazelnut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Hazelnut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Heather -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Heather">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Heaven_Hill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Heaven_Hill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Herbs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Herbs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Highlands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Highlands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Honey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Honey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Iceland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Iceland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Illinois -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Illinois">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#India -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#India">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Indiana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Indiana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Iodine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Iodine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Iowa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Iowa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ireland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Islands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Islands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Islay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Islay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Jack_Daniels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Jack_Daniels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Jim_Beam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Jim_Beam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Kansas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Kansas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Kentucky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Kentucky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Kiwi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Kiwi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Knockando -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Knockando">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lagavulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lagavulin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Leather -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Leather">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lowlands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Lowlands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mackmyra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mackmyra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Madeira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Madeira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mahogany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mahogany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Malt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Malt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Malt_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Malt_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Manzanilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Manzanilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Marsala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Marsala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Medicinal_smoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Medicinal_smoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Melon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Melon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Michigan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Michigan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Midleton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Midleton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Mint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Muscat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Muscat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Netherlands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Netherlands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#New_York -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#New_York">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#New_Zealand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#New_Zealand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Nutmeg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Nutmeg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Nuts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Nuts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ohio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ohio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Old_gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Old_gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Old_sautemes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Old_sautemes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oloroso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oloroso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oloroso_sherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Oloroso_sherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Orange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pale_gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pale_gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pale_straw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pale_straw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Palo_Cortado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Palo_Cortado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Peach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Peach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Peat_smoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Peat_smoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pennsylvania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pennsylvania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pineapple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pineapple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Plum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Plum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rasin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rasin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ruby_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Ruby_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rye"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rye_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rye_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Salt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Salt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sauternes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sauternes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Scotland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Scotland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Seaweed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Seaweed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Single_malt_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Single_malt_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Single_pot_still_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Single_pot_still_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Slyrs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Slyrs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Speyside -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Speyside">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Spices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Spices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sunlight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sunlight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sweden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sweden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sweet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Sweet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Switzerland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Switzerland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Teelings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Teelings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tennessee_whiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tennessee_whiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Texas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Texas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tokaji -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tokaji">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Treacle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Treacle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Visual_property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tropical_fruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tropical_fruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Vanilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Vanilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Walnut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Walnut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Washington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Washington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wheat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wheat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wild_Turkey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wild_Turkey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wyoming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Wyoming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Yamazaki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Yamazaki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Yilan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Yilan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Young_sautemes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Young_sautemes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#tobacco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#tobacco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Tasting_notes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bordeuax_(red) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Bordeuax_(red)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Miyagikyo_(Nikka) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Miyagikyo_(Nikka)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pedro_Ximenez(PX) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Pedro_Ximenez(PX)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Port_(Semi-dry) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Port_(Semi-dry)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Port_(dry) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Port_(dry)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Port_(sweet) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Port_(sweet)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rum_(dark) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rum_(dark)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rum_(white) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Rum_(white)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mats/ontologies/2017/9/Whiskey#Cask_predecessor_liquid"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
