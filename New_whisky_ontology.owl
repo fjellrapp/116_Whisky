@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.whisky.com/Whiskey#"
-     xml:base="http://www.whisky.com/Whiskey"
+<rdf:RDF xmlns="http://www.whisky.com/whiskey#"
+     xml:base="http://www.whisky.com/whiskey"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.whisky.com/Whiskey">
+    <owl:Ontology rdf:about="http://www.whisky.com/whiskey">
         <rdfs:comment></rdfs:comment>
     </owl:Ontology>
     
@@ -23,92 +23,94 @@
     
 
 
-    <!-- http://www.whisky.com/Whiskey#distilledBy -->
+    <!-- http://www.whisky.com/whiskey#distilledBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#distilledBy">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#distilledBy">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#distilledFrom -->
+    <!-- http://www.whisky.com/whiskey#distilledFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#distilledFrom">
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#distilledFrom">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Whiskey_Ingredients"/>
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#distilledTo -->
+    <!-- http://www.whisky.com/whiskey#distilledTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#distilledTo">
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#distilledTo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Whiskey_Ingredients"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#hasColour -->
+    <!-- http://www.whisky.com/whiskey#hasColour -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#hasColour">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasColour">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#hasContained -->
+    <!-- http://www.whisky.com/whiskey#hasContained -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#hasContained">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Cask"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasContained">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Cask"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#locatedIn -->
+    <!-- http://www.whisky.com/whiskey#hasFinish -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#locatedIn">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Region"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasFinish"/>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#locatedIn">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Region"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#madeOf -->
+    <!-- http://www.whisky.com/whiskey#madeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#madeOf">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Cask"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Cask_material"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#madeOf">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Cask"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#maturedIn -->
+    <!-- http://www.whisky.com/whiskey#maturedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#maturedIn">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Cask"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#maturedIn">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Cask"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#producedIn -->
+    <!-- http://www.whisky.com/whiskey#producedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#producedIn">
-        <rdfs:domain rdf:resource="http://www.whisky.com/Whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/Whiskey#Location"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#producedIn">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#storedIn -->
+    <!-- http://www.whisky.com/whiskey#storedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/Whiskey#storedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#storedIn"/>
     
 
 
@@ -123,65 +125,151 @@
     
 
 
-    <!-- http://www.whisky.com/Whiskey#alcoholPercentage -->
+    <!-- http://www.whisky.com/whiskey#alcoholPercentage -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#alcoholPercentage">
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#alcoholPercentage">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#finish -->
+    <!-- http://www.whisky.com/whiskey#finishingNotes -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#finish">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/Whiskey#tastingNotes"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishingNotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#hasAge -->
+    <!-- http://www.whisky.com/whiskey#hasAge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#hasAge">
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#hasAge">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#hasBottleSize -->
+    <!-- http://www.whisky.com/whiskey#hasBottleSize -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#hasBottleSize">
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#hasBottleSize">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#nosing -->
+    <!-- http://www.whisky.com/whiskey#hasRating -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#nosing">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/Whiskey#tastingNotes"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#hasRating"/>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingNotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingNotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#rating -->
+    <!-- http://www.whisky.com/whiskey#tasting -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#rating">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tasting"/>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingApple -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingApple">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#tasting -->
+    <!-- http://www.whisky.com/whiskey#tastingBerries -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#tasting">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/Whiskey#tastingNotes"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingBerries">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#tastingNotes -->
+    <!-- http://www.whisky.com/whiskey#tastingDriedFruit -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/Whiskey#tastingNotes"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingDriedFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingGrapefruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingGrapefruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingGrapes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingGrapes">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingLemon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingLemon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingLime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingLime">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingNotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingNotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingPlum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingPlum">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingSherry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingSherry">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingTropicalFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingTropicalFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -196,105 +284,166 @@
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Brand -->
+    <!-- http://www.whisky.com/whiskey#Cask -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Brand">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/Whiskey#Whiskey"/>
-        <rdfs:comment>Types of whiskey</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.whisky.com/Whiskey#Cask -->
-
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Cask">
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Cask">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
         <rdfs:comment>Different cask types for storing whisky</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Cask_material -->
+    <!-- http://www.whisky.com/whiskey#CaskMaturation -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Cask_material"/>
-    
-
-
-    <!-- http://www.whisky.com/Whiskey#Cask_predecessor_liquid -->
-
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Cask_predecessor_liquid">
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#CaskMaturation">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
         <rdfs:isDefinedBy>The previous contents of the casks in which the whisky is stored</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Country -->
+    <!-- http://www.whisky.com/whiskey#Country -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Country">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/Whiskey#Location"/>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Country">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Location"/>
         <rdfs:comment>The whiskey&apos;s country of origin</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Distillery -->
+    <!-- http://www.whisky.com/whiskey#Distillery -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Distillery">
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Distillery">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
         <rdfs:isDefinedBy>A place where the whiskey is distilled</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Grain_ingredient -->
+    <!-- http://www.whisky.com/whiskey#FinishingCask -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Grain_ingredient">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/Whiskey#Whiskey_Ingredients"/>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#FinishingCask">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+        <rdfs:comment>Finishing cask for the maturing for whisky</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Location -->
+    <!-- http://www.whisky.com/whiskey#Location -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Location">
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Location">
         <rdfs:comment>The location in which the whisky is produced</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Region -->
+    <!-- http://www.whisky.com/whiskey#Region -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Region">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/Whiskey#Location"/>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Region">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Location"/>
         <rdfs:comment>distillery regions</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Tasting_notes -->
+    <!-- http://www.whisky.com/whiskey#Tasting_notes -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Tasting_notes">
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Tasting_notes">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
         <rdfs:comment>Whiskey tasting notes. Class for the different tastes of whiskey</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Visual_property -->
+    <!-- http://www.whisky.com/whiskey#ValuePartition -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Visual_property">
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#ValuePartition"/>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#Visual_property -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Visual_property">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
         <rdfs:comment>Colour of whiskey</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Whiskey -->
+    <!-- http://www.whisky.com/whiskey#Whiskey -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Whiskey"/>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Whiskey_Ingredients -->
+    <!-- http://www.whisky.com/whiskey#WhiskeyBlended -->
 
-    <owl:Class rdf:about="http://www.whisky.com/Whiskey#Whiskey_Ingredients">
-        <rdfs:comment>Ingredients used in the destillation of whiskey</rdfs:comment>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyBlended">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeyBourbon -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyBourbon">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeyCorn -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyCorn">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeyGrain -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyGrain">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeyMalt -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyMalt">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeyRye -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyRye">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeySingleMalt -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeySingleMalt">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeySinglePotStill -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeySinglePotStill">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WhiskeyTennessee -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#WhiskeyTennessee">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
     </owl:Class>
     
 
@@ -310,1461 +459,1494 @@
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Aberlour -->
+    <!-- http://www.whisky.com/whiskey#Aberlour -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Aberlour">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Aberlour">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Africa -->
+    <!-- http://www.whisky.com/whiskey#Alcohol -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Africa">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Alcohol">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Alcohol -->
+    <!-- http://www.whisky.com/whiskey#Almonds -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Alcohol">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Almonds">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Almonds -->
+    <!-- http://www.whisky.com/whiskey#Amarone -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Almonds">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Amarone">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Amarone -->
+    <!-- http://www.whisky.com/whiskey#American_white_oak -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Amarone">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#American_white_oak">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Cask"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#American_white_oak -->
+    <!-- http://www.whisky.com/whiskey#Amontillado -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#American_white_oak">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_material"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Amontillado">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Amontillado -->
+    <!-- http://www.whisky.com/whiskey#Amontillado_sherry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Amontillado">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Amontillado_sherry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Amontillado_sherry -->
+    <!-- http://www.whisky.com/whiskey#Anise -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Amontillado_sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Anise">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Anise -->
+    <!-- http://www.whisky.com/whiskey#Apple -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Anise">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Apple">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Apple -->
+    <!-- http://www.whisky.com/whiskey#Ardbeg -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Apple">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ardbeg">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ardbeg -->
+    <!-- http://www.whisky.com/whiskey#Argentina -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ardbeg">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Argentina">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Argentina -->
+    <!-- http://www.whisky.com/whiskey#Australia -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Argentina">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Australia">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Australia -->
+    <!-- http://www.whisky.com/whiskey#Austria -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Australia">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Austria">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Austria -->
+    <!-- http://www.whisky.com/whiskey#Banana -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Austria">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Banana">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Banana -->
+    <!-- http://www.whisky.com/whiskey#Barley -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Banana">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Barley">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Barley -->
+    <!-- http://www.whisky.com/whiskey#Barolo -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Barley">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Barolo">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Barolo -->
+    <!-- http://www.whisky.com/whiskey#Belgium -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Barolo">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Belgium">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Belgium -->
+    <!-- http://www.whisky.com/whiskey#Ben_Nevis -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Belgium">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ben_Nevis">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ben_Nevis -->
+    <!-- http://www.whisky.com/whiskey#Berry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ben_Nevis">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Berry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Berry -->
+    <!-- http://www.whisky.com/whiskey#Blackberry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Berry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Blackberry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Blackberry -->
+    <!-- http://www.whisky.com/whiskey#Blended -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Blackberry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Blended"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Blended -->
+    <!-- http://www.whisky.com/whiskey#Bonfire_smoke -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Blended">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bonfire_smoke">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Bonfire_smoke -->
+    <!-- http://www.whisky.com/whiskey#Bourbon -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Bonfire_smoke">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bourbon">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Bourbon -->
+    <!-- http://www.whisky.com/whiskey#Bowmore -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Bourbon">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bowmore">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Bowmore -->
+    <!-- http://www.whisky.com/whiskey#Buffalo_Trace -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Bowmore">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Buffalo_Trace">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Buffalo_Trace -->
+    <!-- http://www.whisky.com/whiskey#Burgundy -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Buffalo_Trace">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Burgundy">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Burgundy -->
+    <!-- http://www.whisky.com/whiskey#Cake -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Burgundy">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cake">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Cake -->
+    <!-- http://www.whisky.com/whiskey#California -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Cake">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#California">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#California -->
+    <!-- http://www.whisky.com/whiskey#Campbeltown -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#California">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Campbeltown">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Campbeltown -->
+    <!-- http://www.whisky.com/whiskey#Canada -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Campbeltown">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Canada">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Canada -->
+    <!-- http://www.whisky.com/whiskey#Caramel -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Canada">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Caramel">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Caramel -->
+    <!-- http://www.whisky.com/whiskey#Chardonnay -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Caramel">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chardonnay">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Chardonnay -->
+    <!-- http://www.whisky.com/whiskey#Cheese -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Chardonnay">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cheese">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Cheese -->
+    <!-- http://www.whisky.com/whiskey#Cherry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Cheese">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cherry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Cherry -->
+    <!-- http://www.whisky.com/whiskey#Chilli -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Cherry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chilli">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Chilli -->
+    <!-- http://www.whisky.com/whiskey#Chocolate -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Chilli">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chocolate">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Chocolate -->
+    <!-- http://www.whisky.com/whiskey#Cinnamon -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Chocolate">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cinnamon">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Cinnamon -->
+    <!-- http://www.whisky.com/whiskey#Clove -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Cinnamon">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Clove">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Clove -->
+    <!-- http://www.whisky.com/whiskey#Coconut -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Clove">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Coconut">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Coconut -->
+    <!-- http://www.whisky.com/whiskey#Coffee -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Coconut">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Coffee">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Coffee -->
+    <!-- http://www.whisky.com/whiskey#Copper -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Coffee">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Copper">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Copper -->
+    <!-- http://www.whisky.com/whiskey#Corn_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Copper">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Corn_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Corn_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Corsica -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Corn_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Corsica">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Corsica -->
+    <!-- http://www.whisky.com/whiskey#Czech_Republic -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Corsica">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Czech_Republic">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Czech_Republic -->
+    <!-- http://www.whisky.com/whiskey#Dark_Chocolate -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Czech_Republic">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Dark_Chocolate">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Dark_Chocolate -->
+    <!-- http://www.whisky.com/whiskey#Date -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Dark_Chocolate">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Date">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Date -->
+    <!-- http://www.whisky.com/whiskey#Denmark -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Date">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Denmark">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Denmark -->
+    <!-- http://www.whisky.com/whiskey#Dried_fruit -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Denmark">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Dried_fruit">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Dried_fruit -->
+    <!-- http://www.whisky.com/whiskey#Dufftown -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Dried_fruit">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Dufftown">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Dufftown -->
+    <!-- http://www.whisky.com/whiskey#England -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Dufftown">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#England">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#England -->
+    <!-- http://www.whisky.com/whiskey#European_oak -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#England">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#European_oak">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Cask"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#European_oak -->
+    <!-- http://www.whisky.com/whiskey#Fig -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#European_oak">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_material"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fig">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Fig -->
+    <!-- http://www.whisky.com/whiskey#Finland -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Fig">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Finland">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Finland -->
+    <!-- http://www.whisky.com/whiskey#Fino -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Finland">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fino">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Fino -->
+    <!-- http://www.whisky.com/whiskey#Fino_sherry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Fino">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fino_sherry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Fino_sherry -->
+    <!-- http://www.whisky.com/whiskey#Floral -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Fino_sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Floral">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Floral -->
+    <!-- http://www.whisky.com/whiskey#Four_Roses -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Floral">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Four_Roses">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Four_Roses -->
+    <!-- http://www.whisky.com/whiskey#France -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Four_Roses">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#France">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#France -->
+    <!-- http://www.whisky.com/whiskey#Fruit -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#France">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fruit">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Fruit -->
+    <!-- http://www.whisky.com/whiskey#Full_gold -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Fruit">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Full_gold">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Full_gold -->
+    <!-- http://www.whisky.com/whiskey#Germany -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Full_gold">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Germany">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Germany -->
+    <!-- http://www.whisky.com/whiskey#Gin_clear -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Germany">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Gin_clear">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Gin_clear -->
+    <!-- http://www.whisky.com/whiskey#Ginger -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Gin_clear">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ginger">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ginger -->
+    <!-- http://www.whisky.com/whiskey#Glenmorangie -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ginger">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Glenmorangie">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Glenmorangie -->
+    <!-- http://www.whisky.com/whiskey#Grain_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Glenmorangie">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grain_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Grain_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Grape -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Grain_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grape">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Grape -->
+    <!-- http://www.whisky.com/whiskey#Grapefruit -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Grape">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grapefruit">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Grapefruit -->
+    <!-- http://www.whisky.com/whiskey#Grass -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Grapefruit">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grass">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Grass -->
+    <!-- http://www.whisky.com/whiskey#Green_apple -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Grass">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Green_apple">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Green_apple -->
+    <!-- http://www.whisky.com/whiskey#Ham -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Green_apple">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ham">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ham -->
+    <!-- http://www.whisky.com/whiskey#Hammerschmiede -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ham">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Hammerschmiede">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Hammerschmiede -->
+    <!-- http://www.whisky.com/whiskey#Hay -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Hammerschmiede">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Hay">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Hay -->
+    <!-- http://www.whisky.com/whiskey#Hazelnut -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Hay">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Hazelnut">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Hazelnut -->
+    <!-- http://www.whisky.com/whiskey#Heather -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Hazelnut">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Heather">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Heather -->
+    <!-- http://www.whisky.com/whiskey#Heaven_Hill -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Heather">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Heaven_Hill">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Heaven_Hill -->
+    <!-- http://www.whisky.com/whiskey#Herbs -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Heaven_Hill">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Herbs">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Herbs -->
+    <!-- http://www.whisky.com/whiskey#Highlands -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Herbs">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Highlands">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Highlands -->
+    <!-- http://www.whisky.com/whiskey#Honey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Highlands">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Honey">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Honey -->
+    <!-- http://www.whisky.com/whiskey#Iceland -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Honey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Iceland">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Iceland -->
+    <!-- http://www.whisky.com/whiskey#Illinois -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Iceland">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Illinois">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Illinois -->
+    <!-- http://www.whisky.com/whiskey#India -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Illinois">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#India">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#India -->
+    <!-- http://www.whisky.com/whiskey#Indiana -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#India">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Indiana">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Indiana -->
+    <!-- http://www.whisky.com/whiskey#Iodine -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Indiana">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Iodine">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Iodine -->
+    <!-- http://www.whisky.com/whiskey#Iowa -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Iodine">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Iowa">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Iowa -->
+    <!-- http://www.whisky.com/whiskey#Ireland -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Iowa">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ireland">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ireland -->
+    <!-- http://www.whisky.com/whiskey#Islands -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ireland">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Islands">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Islands -->
+    <!-- http://www.whisky.com/whiskey#Islay -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Islands">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Islay">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Islay -->
+    <!-- http://www.whisky.com/whiskey#Italy -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Islay">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Italy">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Italy -->
+    <!-- http://www.whisky.com/whiskey#Jack_Daniels -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Italy">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Jack_Daniels">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Jack_Daniels -->
+    <!-- http://www.whisky.com/whiskey#Japan -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Jack_Daniels">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Japan">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Japan -->
+    <!-- http://www.whisky.com/whiskey#Jim_Beam -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Japan">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Jim_Beam">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Jim_Beam -->
+    <!-- http://www.whisky.com/whiskey#Kansas -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Jim_Beam">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Kansas">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Kansas -->
+    <!-- http://www.whisky.com/whiskey#Kentucky -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Kansas">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Kentucky">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Kentucky -->
+    <!-- http://www.whisky.com/whiskey#Kiwi -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Kentucky">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Kiwi">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Kiwi -->
+    <!-- http://www.whisky.com/whiskey#Knockando -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Kiwi">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Knockando">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Knockando -->
+    <!-- http://www.whisky.com/whiskey#Lagavulin -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Knockando">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Lagavulin">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Lagavulin -->
+    <!-- http://www.whisky.com/whiskey#Leather -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Lagavulin">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Leather">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Leather -->
+    <!-- http://www.whisky.com/whiskey#Lemon -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Leather">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Lemon">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Lemon -->
+    <!-- http://www.whisky.com/whiskey#Lime -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Lemon">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Lime">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Lime -->
+    <!-- http://www.whisky.com/whiskey#Lowlands -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Lime">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Lowlands">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Lowlands -->
+    <!-- http://www.whisky.com/whiskey#Mackmyra -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Lowlands">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Mackmyra">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Mackmyra -->
+    <!-- http://www.whisky.com/whiskey#Madeira -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Mackmyra">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Madeira">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Madeira -->
+    <!-- http://www.whisky.com/whiskey#Mahogany -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Madeira">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Mahogany">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Mahogany -->
+    <!-- http://www.whisky.com/whiskey#Malt -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Mahogany">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Malt">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Malt -->
+    <!-- http://www.whisky.com/whiskey#Malt_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Malt">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Malt_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Malt_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Manzanilla -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Malt_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Manzanilla">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Manzanilla -->
+    <!-- http://www.whisky.com/whiskey#Marsala -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Manzanilla">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Marsala">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Marsala -->
+    <!-- http://www.whisky.com/whiskey#Medicinal_smoke -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Marsala">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Medicinal_smoke">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Medicinal_smoke -->
+    <!-- http://www.whisky.com/whiskey#Melon -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Medicinal_smoke">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Melon">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Melon -->
+    <!-- http://www.whisky.com/whiskey#Mexico -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Melon">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Mexico">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Mexico -->
+    <!-- http://www.whisky.com/whiskey#Michigan -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Mexico">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Michigan">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Michigan -->
+    <!-- http://www.whisky.com/whiskey#Midleton -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Michigan">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Midleton">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Midleton -->
+    <!-- http://www.whisky.com/whiskey#Mint -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Midleton">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Mint">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Mint -->
+    <!-- http://www.whisky.com/whiskey#Muscat -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Mint">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Muscat">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Muscat -->
+    <!-- http://www.whisky.com/whiskey#Netherlands -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Muscat">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Netherlands">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Netherlands -->
+    <!-- http://www.whisky.com/whiskey#New_York -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Netherlands">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#New_York">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#New_York -->
+    <!-- http://www.whisky.com/whiskey#New_Zealand -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#New_York">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#New_Zealand">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#New_Zealand -->
+    <!-- http://www.whisky.com/whiskey#Nutmeg -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#New_Zealand">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Nutmeg">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Nutmeg -->
+    <!-- http://www.whisky.com/whiskey#Nuts -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Nutmeg">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Nuts">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Nuts -->
+    <!-- http://www.whisky.com/whiskey#Oak -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Nuts">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oak">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Oak -->
+    <!-- http://www.whisky.com/whiskey#Ohio -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Oak">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ohio">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ohio -->
+    <!-- http://www.whisky.com/whiskey#Oil -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ohio">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oil">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Oil -->
+    <!-- http://www.whisky.com/whiskey#Old_gold -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Oil">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Old_gold">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Old_gold -->
+    <!-- http://www.whisky.com/whiskey#Old_sautemes -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Old_gold">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Old_sautemes">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Old_sautemes -->
+    <!-- http://www.whisky.com/whiskey#Oloroso -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Old_sautemes">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oloroso">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Oloroso -->
+    <!-- http://www.whisky.com/whiskey#Oloroso_sherry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Oloroso">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oloroso_sherry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Oloroso_sherry -->
+    <!-- http://www.whisky.com/whiskey#Orange -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Oloroso_sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Orange">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Orange -->
+    <!-- http://www.whisky.com/whiskey#Pale_gold -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Orange">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pale_gold">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pale_gold -->
+    <!-- http://www.whisky.com/whiskey#Pale_straw -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pale_gold">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pale_straw">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pale_straw -->
+    <!-- http://www.whisky.com/whiskey#Palo_Cortado -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pale_straw">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Palo_Cortado">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Palo_Cortado -->
+    <!-- http://www.whisky.com/whiskey#Peach -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Palo_Cortado">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Peach">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Peach -->
+    <!-- http://www.whisky.com/whiskey#Pear -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Peach">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pear">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pear -->
+    <!-- http://www.whisky.com/whiskey#Peat_smoke -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pear">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Peat_smoke">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Peat_smoke -->
+    <!-- http://www.whisky.com/whiskey#Pennsylvania -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Peat_smoke">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pennsylvania">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pennsylvania -->
+    <!-- http://www.whisky.com/whiskey#Pepper -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pennsylvania">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pepper">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pepper -->
+    <!-- http://www.whisky.com/whiskey#Pineapple -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pepper">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pineapple">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pineapple -->
+    <!-- http://www.whisky.com/whiskey#Plum -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pineapple">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Plum">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Plum -->
+    <!-- http://www.whisky.com/whiskey#Rasin -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Plum">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rasin">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Rasin -->
+    <!-- http://www.whisky.com/whiskey#Ruby_port -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Rasin">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ruby_port">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Ruby_port -->
+    <!-- http://www.whisky.com/whiskey#Rye -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Ruby_port">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rye"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Rye -->
+    <!-- http://www.whisky.com/whiskey#Rye_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Rye"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rye_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Rye_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Salt -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Rye_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Salt">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Salt -->
+    <!-- http://www.whisky.com/whiskey#Sauternes -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Salt">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sauternes">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Sauternes -->
+    <!-- http://www.whisky.com/whiskey#Scotland -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Sauternes">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Scotland">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Scotland -->
+    <!-- http://www.whisky.com/whiskey#Seaweed -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Scotland">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Seaweed">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Seaweed -->
+    <!-- http://www.whisky.com/whiskey#Sherry -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Seaweed">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sherry">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Sherry -->
+    <!-- http://www.whisky.com/whiskey#Single_malt_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Single_malt_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Single_malt_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Single_pot_still_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Single_malt_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Single_pot_still_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Single_pot_still_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Slyrs -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Single_pot_still_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Slyrs">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Slyrs -->
+    <!-- http://www.whisky.com/whiskey#Speyside -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Slyrs">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Speyside">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Speyside -->
+    <!-- http://www.whisky.com/whiskey#Spices -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Speyside">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Spices">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Spices -->
+    <!-- http://www.whisky.com/whiskey#Sunlight -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Spices">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sunlight">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Sunlight -->
+    <!-- http://www.whisky.com/whiskey#Sweden -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Sunlight">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sweden">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Sweden -->
+    <!-- http://www.whisky.com/whiskey#Sweet -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Sweden">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sweet">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Sweet -->
+    <!-- http://www.whisky.com/whiskey#Switzerland -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Sweet">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Switzerland">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Switzerland -->
+    <!-- http://www.whisky.com/whiskey#Teelings -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Switzerland">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Teelings">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Teelings -->
+    <!-- http://www.whisky.com/whiskey#Tennessee_whiskey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Teelings">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tennessee_whiskey"/>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Tennessee_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Texas -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Tennessee_whiskey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Brand"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Texas">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Texas -->
+    <!-- http://www.whisky.com/whiskey#Tokaji -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Texas">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tokaji">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Tokaji -->
+    <!-- http://www.whisky.com/whiskey#Treacle -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Tokaji">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Treacle">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Treacle -->
+    <!-- http://www.whisky.com/whiskey#Tropical_fruit -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Treacle">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Visual_property"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tropical_fruit">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Tropical_fruit -->
+    <!-- http://www.whisky.com/whiskey#USA -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Tropical_fruit">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#USA">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#USA -->
+    <!-- http://www.whisky.com/whiskey#Vanilla -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#USA">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Vanilla">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Vanilla -->
+    <!-- http://www.whisky.com/whiskey#Wales -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Vanilla">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Wales">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Wales -->
+    <!-- http://www.whisky.com/whiskey#Walnut -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Wales">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Walnut">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Walnut -->
+    <!-- http://www.whisky.com/whiskey#Washington -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Walnut">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Washington">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Washington -->
+    <!-- http://www.whisky.com/whiskey#Wheat -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Washington">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Wheat">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Wheat -->
+    <!-- http://www.whisky.com/whiskey#Wild_Turkey -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Wheat">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Wild_Turkey">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Wild_Turkey -->
+    <!-- http://www.whisky.com/whiskey#Wyoming -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Wild_Turkey">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Wyoming">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Wyoming -->
+    <!-- http://www.whisky.com/whiskey#Yamazaki -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Wyoming">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Yamazaki">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Yamazaki -->
+    <!-- http://www.whisky.com/whiskey#Yilan -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Yamazaki">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Yilan">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Yilan -->
+    <!-- http://www.whisky.com/whiskey#Young_sautemes -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Yilan">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Region"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Young_sautemes">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Young_sautemes -->
+    <!-- http://www.whisky.com/whiskey#tobacco -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Young_sautemes">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#tobacco">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#tobacco -->
+    <!-- http://www.whisky.com/whiskey#Bordeuax_(red) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#tobacco">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Tasting_notes"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bordeuax_(red)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Bordeuax_(red) -->
+    <!-- http://www.whisky.com/whiskey#Miyagikyo_(Nikka) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Bordeuax_(red)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Miyagikyo_(Nikka)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Miyagikyo_(Nikka) -->
+    <!-- http://www.whisky.com/whiskey#Pedro_Ximenez(PX) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Miyagikyo_(Nikka)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Distillery"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pedro_Ximenez(PX)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Pedro_Ximenez(PX) -->
+    <!-- http://www.whisky.com/whiskey#Port_(Semi-dry) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Pedro_Ximenez(PX)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Port_(Semi-dry)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Port_(Semi-dry) -->
+    <!-- http://www.whisky.com/whiskey#Port_(dry) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Port_(Semi-dry)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Port_(dry)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Port_(dry) -->
+    <!-- http://www.whisky.com/whiskey#Port_(sweet) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Port_(dry)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Port_(sweet)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Port_(sweet) -->
+    <!-- http://www.whisky.com/whiskey#Rum_(dark) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Port_(sweet)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rum_(dark)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Rum_(dark) -->
+    <!-- http://www.whisky.com/whiskey#Rum_(white) -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Rum_(dark)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rum_(white)">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.whisky.com/Whiskey#Rum_(white) -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/Whiskey#Rum_(white)">
-        <rdf:type rdf:resource="http://www.whisky.com/Whiskey#Cask_predecessor_liquid"/>
-    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyBourbon"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyCorn"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyGrain"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyMalt"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyRye"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeySinglePotStill"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyTennessee"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Argentina"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Australia"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Austria"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Belgium"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#California"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Canada"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Czech_Republic"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Denmark"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#England"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Finland"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#France"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Iceland"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#India"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Ireland"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Italy"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Japan"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Mexico"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Netherlands"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#New_Zealand"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Scotland"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Sweden"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Switzerland"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#USA"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Wales"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 
