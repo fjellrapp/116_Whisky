@@ -41,19 +41,11 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#distilledTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#distilledTo">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.whisky.com/whiskey#hasColour -->
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasColour">
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:ObjectProperty>
     
 
@@ -61,8 +53,7 @@
     <!-- http://www.whisky.com/whiskey#hasContained -->
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasContained">
-        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Cask"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:ObjectProperty>
     
 
@@ -73,20 +64,9 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#locatedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#locatedIn">
-        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Region"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Country"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.whisky.com/whiskey#madeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#madeOf">
-        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Cask"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#madeOf"/>
     
 
 
@@ -94,7 +74,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#maturedIn">
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Cask"/>
     </owl:ObjectProperty>
     
 
@@ -105,6 +84,12 @@
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
         <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Location"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#producedInRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#producedInRegion"/>
     
 
 
@@ -1419,6 +1404,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#totalNoRatings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#totalNoRatings">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#hasRating"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1430,20 +1423,17 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#Cask -->
+    <!-- http://www.whisky.com/whiskey#Characteristics -->
 
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#Cask">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
-        <rdfs:comment>Different cask types for storing whisky</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Characteristics"/>
     
 
 
-    <!-- http://www.whisky.com/whiskey#CaskMaturation -->
+    <!-- http://www.whisky.com/whiskey#ColorNuances -->
 
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#CaskMaturation">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
-        <rdfs:isDefinedBy>The previous contents of the casks in which the whisky is stored</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#ColorNuances">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Characteristics"/>
+        <rdfs:comment>Colour of whiskey</rdfs:comment>
     </owl:Class>
     
 
@@ -1483,6 +1473,15 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#MaturingCask -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#MaturingCask">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+        <rdfs:isDefinedBy>The previous contents of the casks in which the whisky is stored</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
     <!-- http://www.whisky.com/whiskey#Region -->
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#Region">
@@ -1492,10 +1491,10 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#Tasting_notes -->
+    <!-- http://www.whisky.com/whiskey#Taste -->
 
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#Tasting_notes">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Taste">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Characteristics"/>
         <rdfs:comment>Whiskey tasting notes. Class for the different tastes of whiskey</rdfs:comment>
     </owl:Class>
     
@@ -1504,15 +1503,6 @@
     <!-- http://www.whisky.com/whiskey#ValuePartition -->
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#ValuePartition"/>
-    
-
-
-    <!-- http://www.whisky.com/whiskey#Visual_property -->
-
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#Visual_property">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
-        <rdfs:comment>Colour of whiskey</rdfs:comment>
-    </owl:Class>
     
 
 
@@ -1616,7 +1606,7 @@
     <!-- http://www.whisky.com/whiskey#Alcohol -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Alcohol">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1624,7 +1614,7 @@
     <!-- http://www.whisky.com/whiskey#Almonds -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Almonds">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1632,23 +1622,21 @@
     <!-- http://www.whisky.com/whiskey#Amarone -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Amarone">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.whisky.com/whiskey#American_white_oak -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#American_white_oak">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Cask"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#American_white_oak"/>
     
 
 
     <!-- http://www.whisky.com/whiskey#Amontillado -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Amontillado">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -1656,7 +1644,7 @@
     <!-- http://www.whisky.com/whiskey#Amontillado_sherry -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Amontillado_sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -1664,7 +1652,7 @@
     <!-- http://www.whisky.com/whiskey#Anise -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Anise">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1672,7 +1660,7 @@
     <!-- http://www.whisky.com/whiskey#Apple -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Apple">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1712,7 +1700,7 @@
     <!-- http://www.whisky.com/whiskey#Banana -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Banana">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1720,7 +1708,7 @@
     <!-- http://www.whisky.com/whiskey#Barley -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Barley">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1728,7 +1716,7 @@
     <!-- http://www.whisky.com/whiskey#Barolo -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Barolo">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -1752,7 +1740,7 @@
     <!-- http://www.whisky.com/whiskey#Berry -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Berry">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1760,7 +1748,7 @@
     <!-- http://www.whisky.com/whiskey#Blackberry -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Blackberry">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1774,7 +1762,7 @@
     <!-- http://www.whisky.com/whiskey#Bonfire_smoke -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bonfire_smoke">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1782,7 +1770,7 @@
     <!-- http://www.whisky.com/whiskey#Bourbon -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bourbon">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -1806,8 +1794,8 @@
     <!-- http://www.whisky.com/whiskey#Burgundy -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Burgundy">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -1815,7 +1803,7 @@
     <!-- http://www.whisky.com/whiskey#Cake -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cake">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1847,7 +1835,7 @@
     <!-- http://www.whisky.com/whiskey#Caramel -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Caramel">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1855,9 +1843,9 @@
     <!-- http://www.whisky.com/whiskey#Chardonnay -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chardonnay">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -1865,7 +1853,7 @@
     <!-- http://www.whisky.com/whiskey#Cheese -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cheese">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1873,7 +1861,7 @@
     <!-- http://www.whisky.com/whiskey#Cherry -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cherry">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1881,7 +1869,7 @@
     <!-- http://www.whisky.com/whiskey#Chilli -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chilli">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1889,7 +1877,7 @@
     <!-- http://www.whisky.com/whiskey#Chocolate -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chocolate">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1897,7 +1885,7 @@
     <!-- http://www.whisky.com/whiskey#Cinnamon -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Cinnamon">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1905,7 +1893,7 @@
     <!-- http://www.whisky.com/whiskey#Clove -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Clove">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1913,7 +1901,7 @@
     <!-- http://www.whisky.com/whiskey#Coconut -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Coconut">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1921,7 +1909,7 @@
     <!-- http://www.whisky.com/whiskey#Coffee -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Coffee">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1929,7 +1917,7 @@
     <!-- http://www.whisky.com/whiskey#Copper -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Copper">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -1959,7 +1947,7 @@
     <!-- http://www.whisky.com/whiskey#Dark_Chocolate -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Dark_Chocolate">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1967,7 +1955,7 @@
     <!-- http://www.whisky.com/whiskey#Date -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Date">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -1983,7 +1971,7 @@
     <!-- http://www.whisky.com/whiskey#Dried_fruit -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Dried_fruit">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2006,16 +1994,14 @@
 
     <!-- http://www.whisky.com/whiskey#European_oak -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#European_oak">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Cask"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#European_oak"/>
     
 
 
     <!-- http://www.whisky.com/whiskey#Fig -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fig">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2031,7 +2017,7 @@
     <!-- http://www.whisky.com/whiskey#Fino -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fino">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2039,7 +2025,7 @@
     <!-- http://www.whisky.com/whiskey#Fino_sherry -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fino_sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2047,7 +2033,7 @@
     <!-- http://www.whisky.com/whiskey#Floral -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Floral">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2071,7 +2057,7 @@
     <!-- http://www.whisky.com/whiskey#Fruit -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Fruit">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2079,7 +2065,7 @@
     <!-- http://www.whisky.com/whiskey#Full_gold -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Full_gold">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2095,7 +2081,7 @@
     <!-- http://www.whisky.com/whiskey#Gin_clear -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Gin_clear">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2103,7 +2089,7 @@
     <!-- http://www.whisky.com/whiskey#Ginger -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ginger">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2125,7 +2111,7 @@
     <!-- http://www.whisky.com/whiskey#Grape -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grape">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2133,7 +2119,7 @@
     <!-- http://www.whisky.com/whiskey#Grapefruit -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grapefruit">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2141,7 +2127,7 @@
     <!-- http://www.whisky.com/whiskey#Grass -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Grass">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2149,7 +2135,7 @@
     <!-- http://www.whisky.com/whiskey#Green_apple -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Green_apple">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2157,7 +2143,7 @@
     <!-- http://www.whisky.com/whiskey#Ham -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ham">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2173,7 +2159,7 @@
     <!-- http://www.whisky.com/whiskey#Hay -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Hay">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2181,7 +2167,7 @@
     <!-- http://www.whisky.com/whiskey#Hazelnut -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Hazelnut">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2189,7 +2175,7 @@
     <!-- http://www.whisky.com/whiskey#Heather -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Heather">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2205,7 +2191,7 @@
     <!-- http://www.whisky.com/whiskey#Herbs -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Herbs">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2221,7 +2207,7 @@
     <!-- http://www.whisky.com/whiskey#Honey -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Honey">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2261,7 +2247,7 @@
     <!-- http://www.whisky.com/whiskey#Iodine -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Iodine">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2310,7 +2296,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Jack_Daniels">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2350,7 +2336,7 @@
     <!-- http://www.whisky.com/whiskey#Kiwi -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Kiwi">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2374,7 +2360,7 @@
     <!-- http://www.whisky.com/whiskey#Leather -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Leather">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2382,7 +2368,7 @@
     <!-- http://www.whisky.com/whiskey#Lemon -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Lemon">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2390,7 +2376,7 @@
     <!-- http://www.whisky.com/whiskey#Lime -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Lime">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2414,9 +2400,9 @@
     <!-- http://www.whisky.com/whiskey#Madeira -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Madeira">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2424,7 +2410,7 @@
     <!-- http://www.whisky.com/whiskey#Mahogany -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Mahogany">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2432,7 +2418,7 @@
     <!-- http://www.whisky.com/whiskey#Malt -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Malt">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2446,7 +2432,7 @@
     <!-- http://www.whisky.com/whiskey#Manzanilla -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Manzanilla">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2454,7 +2440,7 @@
     <!-- http://www.whisky.com/whiskey#Marsala -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Marsala">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2462,7 +2448,7 @@
     <!-- http://www.whisky.com/whiskey#Medicinal_smoke -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Medicinal_smoke">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2470,7 +2456,7 @@
     <!-- http://www.whisky.com/whiskey#Melon -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Melon">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2502,7 +2488,7 @@
     <!-- http://www.whisky.com/whiskey#Mint -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Mint">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2510,7 +2496,7 @@
     <!-- http://www.whisky.com/whiskey#Muscat -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Muscat">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2539,26 +2525,10 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#Nutmeg -->
-
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Nutmeg">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.whisky.com/whiskey#Nuts -->
-
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Nuts">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.whisky.com/whiskey#Oak -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oak">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2574,7 +2544,7 @@
     <!-- http://www.whisky.com/whiskey#Oil -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oil">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2582,7 +2552,7 @@
     <!-- http://www.whisky.com/whiskey#Old_gold -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Old_gold">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2590,7 +2560,7 @@
     <!-- http://www.whisky.com/whiskey#Old_sautemes -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Old_sautemes">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2598,7 +2568,7 @@
     <!-- http://www.whisky.com/whiskey#Oloroso -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oloroso">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2606,7 +2576,7 @@
     <!-- http://www.whisky.com/whiskey#Oloroso_sherry -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Oloroso_sherry">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2614,7 +2584,7 @@
     <!-- http://www.whisky.com/whiskey#Orange -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Orange">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2622,7 +2592,7 @@
     <!-- http://www.whisky.com/whiskey#Pale_gold -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pale_gold">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2630,7 +2600,7 @@
     <!-- http://www.whisky.com/whiskey#Pale_straw -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pale_straw">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2638,7 +2608,7 @@
     <!-- http://www.whisky.com/whiskey#Palo_Cortado -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Palo_Cortado">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2646,7 +2616,7 @@
     <!-- http://www.whisky.com/whiskey#Peach -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Peach">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2654,7 +2624,7 @@
     <!-- http://www.whisky.com/whiskey#Pear -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pear">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2678,7 +2648,7 @@
     <!-- http://www.whisky.com/whiskey#Pepper -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pepper">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2686,7 +2656,7 @@
     <!-- http://www.whisky.com/whiskey#Pineapple -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pineapple">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2694,7 +2664,7 @@
     <!-- http://www.whisky.com/whiskey#Plum -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Plum">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2702,7 +2672,7 @@
     <!-- http://www.whisky.com/whiskey#Rasin -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rasin">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2710,8 +2680,8 @@
     <!-- http://www.whisky.com/whiskey#Ruby_port -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ruby_port">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2731,7 +2701,7 @@
     <!-- http://www.whisky.com/whiskey#Salt -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Salt">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2739,7 +2709,7 @@
     <!-- http://www.whisky.com/whiskey#Sauternes -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sauternes">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2755,7 +2725,7 @@
     <!-- http://www.whisky.com/whiskey#Seaweed -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Seaweed">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2764,7 +2734,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sherry">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2800,7 +2770,7 @@
     <!-- http://www.whisky.com/whiskey#Spices -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Spices">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2808,7 +2778,7 @@
     <!-- http://www.whisky.com/whiskey#Sunlight -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sunlight">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2824,7 +2794,7 @@
     <!-- http://www.whisky.com/whiskey#Sweet -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Sweet">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2862,7 +2832,7 @@
     <!-- http://www.whisky.com/whiskey#Tokaji -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tokaji">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2870,7 +2840,7 @@
     <!-- http://www.whisky.com/whiskey#Treacle -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Treacle">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Visual_property"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:NamedIndividual>
     
 
@@ -2878,7 +2848,7 @@
     <!-- http://www.whisky.com/whiskey#Tropical_fruit -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tropical_fruit">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2894,7 +2864,7 @@
     <!-- http://www.whisky.com/whiskey#Vanilla -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Vanilla">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2910,7 +2880,7 @@
     <!-- http://www.whisky.com/whiskey#Walnut -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Walnut">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2926,7 +2896,7 @@
     <!-- http://www.whisky.com/whiskey#Wheat -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Wheat">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2966,7 +2936,7 @@
     <!-- http://www.whisky.com/whiskey#Young_sautemes -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Young_sautemes">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2974,7 +2944,7 @@
     <!-- http://www.whisky.com/whiskey#tobacco -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#tobacco">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Tasting_notes"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:NamedIndividual>
     
 
@@ -2982,7 +2952,7 @@
     <!-- http://www.whisky.com/whiskey#Bordeuax_(red) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Bordeuax_(red)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -2998,7 +2968,7 @@
     <!-- http://www.whisky.com/whiskey#Pedro_Ximenez(PX) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pedro_Ximenez(PX)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -3006,7 +2976,7 @@
     <!-- http://www.whisky.com/whiskey#Port_(Semi-dry) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Port_(Semi-dry)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -3014,7 +2984,7 @@
     <!-- http://www.whisky.com/whiskey#Port_(dry) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Port_(dry)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -3022,7 +2992,7 @@
     <!-- http://www.whisky.com/whiskey#Port_(sweet) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Port_(sweet)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -3030,7 +3000,7 @@
     <!-- http://www.whisky.com/whiskey#Rum_(dark) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rum_(dark)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -3038,7 +3008,7 @@
     <!-- http://www.whisky.com/whiskey#Rum_(white) -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Rum_(white)">
-        <rdf:type rdf:resource="http://www.whisky.com/whiskey#CaskMaturation"/>
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
