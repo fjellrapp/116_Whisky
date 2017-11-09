@@ -133,10 +133,442 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#finishingNotes -->
+    <!-- http://www.whisky.com/whiskey#finish -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishingNotes">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finish">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishAlcohol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishAlcohol">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishAlmond -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishAlmond">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishApple -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishApple">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishBanana -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishBanana">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishBarley -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishBarley">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishBerries -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishBerries">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishBlackBerries -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishBlackBerries">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishBonfire -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishBonfire">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishCaramel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishCaramel">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishCheese -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishCheese">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishCherry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishCherry">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishChilli -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishChilli">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishChocolate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishChocolate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishCinnamon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishCinnamon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishCloves -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishCloves">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishCoconut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishCoconut">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishDarkChocolate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishDarkChocolate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishDriedFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishDriedFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishFig -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishFig">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishFloral -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishFloral">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishGrapefruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishGrapefruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishGrapes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishGrapes">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishGrass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishGrass">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishHam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishHam">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishHay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishHay">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishHazelnut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishHazelnut">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishHeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishHeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishHoney -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishHoney">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishKiwi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishKiwi">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishLeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishLeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishLemon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishLemon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishLime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishLime">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishMalt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishMalt">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishMelon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishMelon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishNutmeg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishNutmeg">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishNuts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishNuts">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishOak -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishOak">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishOil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishOil">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishPeach -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishPeach">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishPeatSmoke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishPeatSmoke">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishPepper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishPepper">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishPineapple -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishPineapple">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishPlum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishPlum">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishRaisin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishRaisin">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishSherry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishSherry">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishSpices -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishSpices">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishSweetness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishSweetness">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishTang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishTang">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishTobacco -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishTobacco">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishTropicalFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishTropicalFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishVanilla -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishVanilla">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishWheat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishWheat">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
     </owl:DatatypeProperty>
     
 
@@ -163,24 +595,474 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#nosingNotes -->
+    <!-- http://www.whisky.com/whiskey#nosinDarkChocolate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingNotes">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosinDarkChocolate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosing">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingAlcohol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingAlcohol">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingAlmond -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingAlmond">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingApple -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingApple">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingBarley -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingBarley">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingBonfire -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingBonfire">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingCaramel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingCaramel">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingCheese -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingCheese">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingCherry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingCherry">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingChocolate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingChocolate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingCoconut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingCoconut">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingCoffee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingCoffee">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingDriedFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingDriedFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingFig -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingFig">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingFloral -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingFloral">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingGinger -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingGinger">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingGrapeFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingGrapeFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingGrass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingGrass">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingHam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingHam">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingHay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingHay">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingHazelnut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingHazelnut">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingHeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingHeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingHoney -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingHoney">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingIodine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingIodine">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingKiwi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingKiwi">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingLeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingLeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingLemon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingLemon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingLime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingLime">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingMalt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingMalt">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingMedicinalSmoke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingMedicinalSmoke">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingMelon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingMelon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingNutmeg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingNutmeg">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingNuts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingNuts">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingOak -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingOak">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingOil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingOil">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingOrange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingOrange">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingPeach -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPeach">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingPeatSmoke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPeatSmoke">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingPepper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPepper">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingPineapple -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPineapple">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingPlum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPlum">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingRaisin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingRaisin">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingSalt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingSalt">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingSherry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingSherry">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingSweetness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingSweetness">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingTang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingTang">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingTobacco -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingTobacco">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingTropicalFruit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingTropicalFruit">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingVanilla -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingVanilla">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingWheat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingWheat">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://www.whisky.com/whiskey#tasting -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tasting"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tasting">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingAlcohol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingAlcohol">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingAlmond -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingAlmond">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.whisky.com/whiskey#tastingApple -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingApple">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingBanana -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingBanana">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingBarley -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingBarley">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -188,7 +1070,79 @@
     <!-- http://www.whisky.com/whiskey#tastingBerries -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingBerries">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingBonfire -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingBonfire">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingCaramel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingCaramel">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingCheese -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingCheese">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingChilli -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingChilli">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingChocolate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingChocolate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingCinnamon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingCinnamon">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingCoffee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingCoffee">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingDarkChocolate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingDarkChocolate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -196,7 +1150,15 @@
     <!-- http://www.whisky.com/whiskey#tastingDriedFruit -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingDriedFruit">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingFloral -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingFloral">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -204,7 +1166,15 @@
     <!-- http://www.whisky.com/whiskey#tastingFruit -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingFruit">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingGinger -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingGinger">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -212,7 +1182,7 @@
     <!-- http://www.whisky.com/whiskey#tastingGrapefruit -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingGrapefruit">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -220,7 +1190,71 @@
     <!-- http://www.whisky.com/whiskey#tastingGrapes -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingGrapes">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingGrass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingGrass">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingHam -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingHam">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingHay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingHay">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingHazelnut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingHazelnut">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingHeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingHeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingHoney -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingHoney">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingIodine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingIodine">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingLeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingLeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -228,7 +1262,7 @@
     <!-- http://www.whisky.com/whiskey#tastingLemon -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingLemon">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -236,7 +1270,23 @@
     <!-- http://www.whisky.com/whiskey#tastingLime -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingLime">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingMalt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingMalt">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingMedicinalSmoke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingMedicinalSmoke">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -244,6 +1294,46 @@
     <!-- http://www.whisky.com/whiskey#tastingNotes -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingNotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingNutmeg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingNutmeg">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingOak -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingOak">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingOil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingOil">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingPeatSmoke -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingPeatSmoke">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingPepper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingPepper">
         <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
@@ -252,7 +1342,15 @@
     <!-- http://www.whisky.com/whiskey#tastingPlum -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingPlum">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingRaisin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingRaisin">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -260,7 +1358,31 @@
     <!-- http://www.whisky.com/whiskey#tastingSherry -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingSherry">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingSweetness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingSweetness">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingTang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingTang">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingTobacco -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingTobacco">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
@@ -268,7 +1390,31 @@
     <!-- http://www.whisky.com/whiskey#tastingTropicalFruit -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingTropicalFruit">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tastingNotes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingVanilla -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingVanilla">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastingWheat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastingWheat">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#tastngFig -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tastngFig">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#tasting"/>
     </owl:DatatypeProperty>
     
 
