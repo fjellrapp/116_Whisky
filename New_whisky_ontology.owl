@@ -8,6 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.whisky.com/whiskey">
+        <owl:versionIRI rdf:resource="http://www.whisky.com/whiskey/1.0.0"/>
         <rdfs:label>whisky</rdfs:label>
         <rdfs:comment></rdfs:comment>
     </owl:Ontology>
@@ -2422,6 +2423,42 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#Jameson -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Jameson">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyBlended"/>
+        <distilledBy rdf:resource="http://www.whisky.com/whiskey#Midleton"/>
+        <producedInCountry rdf:resource="http://www.whisky.com/whiskey#Ireland"/>
+        <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Ireland"/>
+        <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</alcoholPercentage>
+        <finishChilli rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.3</finishChilli>
+        <finishFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishFruit>
+        <finishOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</finishOak>
+        <finishOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</finishOil>
+        <finishSherry rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishSherry>
+        <finishSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float"></finishSpices>
+        <finishSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</finishSweetness>
+        <finishVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishVanilla>
+        <hasBottleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</hasBottleSize>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</hasRating>
+        <nosingMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingMalt>
+        <nosingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingSpices>
+        <nosingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</nosingSweetness>
+        <nosingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingVanilla>
+        <ratingTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">154.0</ratingTotal>
+        <tastingAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingAlcohol>
+        <tastingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</tastingFruit>
+        <tastingMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingMalt>
+        <tastingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingOak>
+        <tastingOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingOil>
+        <tastingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tastingSpices>
+        <tastingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tastingSweetness>
+        <tastingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tastingVanilla>
+        <whiskey-Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2072</whiskey-Id>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.whisky.com/whiskey#Japan -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Japan">
@@ -2446,11 +2483,13 @@
         <finishSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishSweetness>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasAge>
         <hasBottleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</hasBottleSize>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.8</hasRating>
         <nosingBarley rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingBarley>
         <nosingMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingMalt>
         <nosingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingSpices>
         <nosingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float"></nosingSweetness>
         <nosingWheat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</nosingWheat>
+        <ratingTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">58.0</ratingTotal>
         <tastingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tastingFruit>
         <tastingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</tastingSpices>
         <tastingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingSweetness>
@@ -3184,6 +3223,14 @@
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeySinglePotStill"/>
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyTennessee"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Aberlour16YearsDoubleCask"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Jameson"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#JimBeam4YearsRyeYellowLabel"/>
+        </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
