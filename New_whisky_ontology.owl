@@ -35,6 +35,15 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#finishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#finishedIn">
+        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
+        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.whisky.com/whiskey#hasColour -->
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasColour">
@@ -57,15 +66,6 @@
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasFinish">
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Taste"/>
         <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Taste"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.whisky.com/whiskey#hasMaturing -->
-
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasMaturing">
-        <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
-        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:ObjectProperty>
     
 
@@ -460,6 +460,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#finishMint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishMint">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.whisky.com/whiskey#finishNutmeg -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishNutmeg">
@@ -487,6 +495,14 @@
     <!-- http://www.whisky.com/whiskey#finishOil -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishOil">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#finishOrange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#finishOrange">
         <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#finish"/>
     </owl:DatatypeProperty>
     
@@ -909,6 +925,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#nosingMint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingMint">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.whisky.com/whiskey#nosingNutmeg -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingNutmeg">
@@ -952,6 +976,14 @@
     <!-- http://www.whisky.com/whiskey#nosingPeach -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPeach">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#nosingPear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#nosingPear">
         <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#nosing"/>
     </owl:DatatypeProperty>
     
@@ -1725,8 +1757,8 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Aberlour16YearsDoubleCask">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Aberlour"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Bourbon"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Bourbon"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
         <producedInCountry rdf:resource="http://www.whisky.com/whiskey#Scotland"/>
         <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Speyside"/>
         <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</alcoholPercentage>
@@ -2155,6 +2187,50 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#ElijahCraig12Years -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#ElijahCraig12Years">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyBourbon"/>
+        <distilledBy rdf:resource="http://www.whisky.com/whiskey#Heaven_Hill"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Virgin_American_White_Oak"/>
+        <producedInCountry rdf:resource="http://www.whisky.com/whiskey#USA"/>
+        <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Kentucky"/>
+        <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">47</alcoholPercentage>
+        <finishCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishCaramel>
+        <finishCloves rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishCloves>
+        <finishCoconut rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishCoconut>
+        <finishFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishFruit>
+        <finishHoney rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishHoney>
+        <finishMint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishMint>
+        <finishOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishOak>
+        <finishOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishOil>
+        <finishOrange rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishOrange>
+        <finishPepper rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishPepper>
+        <finishSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</finishSpices>
+        <finishSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</finishSweetness>
+        <finishTobacco rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishTobacco>
+        <finishVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</finishVanilla>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</hasAge>
+        <hasBottleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</hasBottleSize>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</hasRating>
+        <nosingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingFruit>
+        <nosingHoney rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</nosingHoney>
+        <nosingMint rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</nosingMint>
+        <nosingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingOak>
+        <nosingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</nosingSweetness>
+        <nosingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingVanilla>
+        <ratingTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">153</ratingTotal>
+        <tastingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</tastingFruit>
+        <tastingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tastingOak>
+        <tastingOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingOil>
+        <tastingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</tastingSpices>
+        <tastingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</tastingSweetness>
+        <tastingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingVanilla>
+        <whiskey-Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9345</whiskey-Id>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.whisky.com/whiskey#England -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#England">
@@ -2237,6 +2313,55 @@
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Full_gold">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#GeorgeDickelNo12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#GeorgeDickelNo12">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyTennessee"/>
+        <distilledBy rdf:resource="http://www.whisky.com/whiskey#George_Dickel"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#American_white_oak"/>
+        <producedInCountry rdf:resource="http://www.whisky.com/whiskey#USA"/>
+        <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Tennessee"/>
+        <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</alcoholPercentage>
+        <finishCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishCaramel>
+        <finishCinnamon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishCinnamon>
+        <finishOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishOak>
+        <finishOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishOil>
+        <finishOrange rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</finishOrange>
+        <finishSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishSpices>
+        <finishSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishSweetness>
+        <finishVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishVanilla>
+        <hasBottleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasBottleSize>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</hasRating>
+        <nosingCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingCaramel>
+        <nosingDriedFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</nosingDriedFruit>
+        <nosingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</nosingFruit>
+        <nosingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingOak>
+        <nosingOrange rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</nosingOrange>
+        <nosingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</nosingSweetness>
+        <nosingTobacco rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</nosingTobacco>
+        <nosingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingVanilla>
+        <ratingTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</ratingTotal>
+        <tastingCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingCaramel>
+        <tastingHoney rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</tastingHoney>
+        <tastingMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</tastingMalt>
+        <tastingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tastingOak>
+        <tastingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</tastingSpices>
+        <tastingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tastingSweetness>
+        <tastingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tastingVanilla>
+        <tastingWheat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingWheat>
+        <whiskey-Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">906</whiskey-Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#George_Dickel -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#George_Dickel">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
     </owl:NamedIndividual>
     
 
@@ -2521,8 +2646,6 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#JimBeam4YearsRyeYellowLabel">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyRye"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Jim_Beam"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Bourbon"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
         <producedInCountry rdf:resource="http://www.whisky.com/whiskey#USA"/>
         <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Kentucky"/>
         <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</alcoholPercentage>
@@ -2926,6 +3049,47 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#Redbreast12Years -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Redbreast12Years">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySinglePotStill"/>
+        <distilledBy rdf:resource="http://www.whisky.com/whiskey#Midleton"/>
+        <finishedIn rdf:resource="http://www.whisky.com/whiskey#Oloroso_sherry"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Bourbon"/>
+        <producedInCountry rdf:resource="http://www.whisky.com/whiskey#Ireland"/>
+        <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Ireland"/>
+        <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</alcoholPercentage>
+        <finishChilli rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishChilli>
+        <finishFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishFruit>
+        <finishMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishMalt>
+        <finishOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishOak>
+        <finishPepper rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishPepper>
+        <finishSherry rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishSherry>
+        <finishSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</finishSpices>
+        <finishSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</finishSweetness>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</hasAge>
+        <hasBottleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</hasBottleSize>
+        <nosingCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</nosingCaramel>
+        <nosingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingFruit>
+        <nosingMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</nosingMalt>
+        <nosingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</nosingOak>
+        <nosingPear rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</nosingPear>
+        <nosingSherry rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</nosingSherry>
+        <nosingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</nosingSpices>
+        <nosingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingVanilla>
+        <tastingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</tastingFruit>
+        <tastingMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingMalt>
+        <tastingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</tastingOak>
+        <tastingOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingOil>
+        <tastingPepper rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tastingPepper>
+        <tastingSherry rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tastingSherry>
+        <tastingSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</tastingSpices>
+        <tastingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</tastingSweetness>
+        <whiskey-Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</whiskey-Id>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.whisky.com/whiskey#Ruby_port -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Ruby_port">
@@ -3069,11 +3233,11 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#TeelingSingleMalt">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Teeling"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Burgundy"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#CabernetSauvignon"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Madeira"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Port"/>
-        <hasMaturing rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Burgundy"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#CabernetSauvignon"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Madeira"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Port"/>
+        <maturedIn rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
         <producedInCountry rdf:resource="http://www.whisky.com/whiskey#Ireland"/>
         <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Ireland"/>
         <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</alcoholPercentage>
@@ -3124,9 +3288,11 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#Tennessee_whiskey -->
+    <!-- http://www.whisky.com/whiskey#Tennessee -->
 
-    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tennessee_whiskey"/>
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Tennessee">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#Region"/>
+    </owl:NamedIndividual>
     
 
 
@@ -3174,6 +3340,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Vanilla">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#Taste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#Virgin_American_White_Oak -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Virgin_American_White_Oak">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
     </owl:NamedIndividual>
     
 
@@ -3347,14 +3521,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#Aberlour16YearsDoubleCask"/>
-            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Jameson"/>
-            <rdf:Description rdf:about="http://www.whisky.com/whiskey#JimBeam4YearsRyeYellowLabel"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Aberlour16YearsDoubleCask"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#ElijahCraig12Years"/>
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#Jameson"/>
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#JimBeam4YearsRyeYellowLabel"/>
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#TeelingSingleMalt"/>
