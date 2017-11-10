@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.whisky.com/whiskey#"
      xml:base="http://www.whisky.com/whiskey"
+     xmlns:wy="http://www.whisky.com/whiskey#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.whisky.com/whiskey">
+        <rdfs:label>whisky</rdfs:label>
         <rdfs:comment></rdfs:comment>
     </owl:Ontology>
     
@@ -1042,6 +1044,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#ratingTotal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#ratingTotal">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#hasRating"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.whisky.com/whiskey#tasting -->
 
     <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#tasting">
@@ -1442,10 +1452,9 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#totalNoRatings -->
+    <!-- http://www.whisky.com/whiskey#whiskey-Id -->
 
-    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#totalNoRatings">
-        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#hasRating"/>
+    <owl:DatatypeProperty rdf:about="http://www.whisky.com/whiskey#whiskey-Id">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -1663,8 +1672,38 @@
         <producedInCountry rdf:resource="http://www.whisky.com/whiskey#Scotland"/>
         <producedInRegion rdf:resource="http://www.whisky.com/whiskey#Speyside"/>
         <alcoholPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</alcoholPercentage>
+        <finishChocolate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</finishChocolate>
+        <finishFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</finishFruit>
+        <finishMalt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishMalt>
+        <finishNuts rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishNuts>
+        <finishOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</finishOak>
+        <finishOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</finishOil>
+        <finishPepper rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8</finishPepper>
+        <finishRaisin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</finishRaisin>
+        <finishSpices rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</finishSpices>
+        <finishSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</finishSweetness>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</hasAge>
         <hasBottleSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</hasBottleSize>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</hasRating>
+        <nosingCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</nosingCaramel>
+        <nosingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</nosingFruit>
+        <nosingHoney rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</nosingHoney>
+        <nosingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingOak>
+        <nosingRaisin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingRaisin>
+        <nosingSherry rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</nosingSherry>
+        <nosingSweetness rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</nosingSweetness>
+        <nosingVanilla rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</nosingVanilla>
+        <ratingTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">42.0</ratingTotal>
+        <tastingCaramel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingCaramel>
+        <tastingChocolate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tastingChocolate>
+        <tastingDarkChocolate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingDarkChocolate>
+        <tastingFruit rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingFruit>
+        <tastingOak rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</tastingOak>
+        <tastingOil rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tastingOil>
+        <tastingPlum rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingPlum>
+        <tastingRaisin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tastingRaisin>
+        <tastingSherry rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</tastingSherry>
+        <whiskey-Id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">441</whiskey-Id>
     </owl:NamedIndividual>
     
 
