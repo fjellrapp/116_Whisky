@@ -1597,6 +1597,7 @@
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#ColorNuances">
         <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Characteristics"/>
+        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#Taste"/>
         <rdfs:comment>Colour of whiskey</rdfs:comment>
     </owl:Class>
     
@@ -1615,6 +1616,7 @@
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#Distillery">
         <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
         <rdfs:isDefinedBy>A place where the whiskey is distilled</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1632,6 +1634,7 @@
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#FinishingCask">
         <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
         <rdfs:comment>Finishing cask for the maturing for whisky</rdfs:comment>
     </owl:Class>
     
@@ -3796,6 +3799,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyBourbon"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyCorn"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyGrain"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyRye"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeySinglePotStill"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#WhiskeyTennessee"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
