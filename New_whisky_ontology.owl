@@ -1622,7 +1622,9 @@
 
     <!-- http://www.whisky.com/whiskey#DomainThing -->
 
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#DomainThing"/>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#DomainThing">
+        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+    </owl:Class>
     
 
 
