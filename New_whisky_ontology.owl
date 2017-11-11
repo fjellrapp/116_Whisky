@@ -1616,6 +1616,7 @@
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#Distillery">
         <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#FinishingCask"/>
         <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
         <rdfs:isDefinedBy>A place where the whiskey is distilled</rdfs:isDefinedBy>
     </owl:Class>
