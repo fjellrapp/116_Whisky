@@ -53,14 +53,6 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#hasContained -->
-
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasContained">
-        <rdfs:range rdf:resource="http://www.whisky.com/whiskey#MaturingCask"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.whisky.com/whiskey#hasFinish -->
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasFinish">
@@ -86,12 +78,6 @@
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Taste"/>
         <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.whisky.com/whiskey#madeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#madeOf"/>
     
 
 
@@ -128,12 +114,6 @@
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
         <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Region"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.whisky.com/whiskey#storedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#storedIn"/>
     
 
 
