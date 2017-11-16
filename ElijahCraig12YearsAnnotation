@@ -326,7 +326,7 @@
 								<div class="left-sm left-md left-lg left-xl">
 									<!--Rating:-->
 									
-										
+									
 <a href="#geschmacksbeschreibungen_anchor" title="" property="aggregateRating" typeof="AggregateRating">
 		
 					<div class="rating value-title" style="" title="Rating">
@@ -343,7 +343,7 @@
 			<span property="ratingCount" content="155">(155)</span><span class="separator">,</span>
 		
 	</a>
-	
+</span>
 		<a href="#geschmacksbeschreibungen_anchor" title="">
 			<img title="Tasting Notes" alt="Tasting Notes" src="/typo3conf/ext/datamints_whisky/Resources/Public/Libraries/other_whisky_resources/src/public/icons/pen-and-glass-orange.png" width="19" height="16" />
 			<!--Tasting Notes:-->
@@ -461,7 +461,7 @@
 			<label>
 				Whisky-ID:
 			</label>
-			<span class="value" property="wy:whiskey-Id">
+			<span class="value" property="wy:whiskey-Id" content="1699">
 				9345
 			</span>
 		</td>
@@ -489,14 +489,14 @@
 						<label>Country, Region:</label>
 						<span class="value">
 							
-                                
-									<a title="USA" href="/whisky-database/distilleries.html?tx_datamintsflaschendb_pi4%5BsearchCriteria%5D%5Bland%5D=8" property="wy:producedInCountry" resource="wy:USA">USA</a>,
-								
+                                    <span property="wy:producedInCountry" resource="wy:USA">
+									<a title="USA" href="/whisky-database/distilleries.html?tx_datamintsflaschendb_pi4%5BsearchCriteria%5D%5Bland%5D=8">USA</a>,
+								</span>
 							
 							
-								
+                                    <span property="wy:producedInRegion" resource="wy:Kentucky">
 									<a title="Kentucky" href="/whisky-database/distilleries.html?tx_datamintsflaschendb_pi4%5BsearchCriteria%5D%5Bregion%5D=10" property="wy:producedInRegion" resource="wy:Kentucky">Kentucky</a>
-								
+                                </span>
 							
 						</span>
 					</td>
@@ -513,7 +513,7 @@
 					</label>
 					<span class="value" resource="Product" typeof="wy:WhiskeyBourbon">
 						
-								
+                            <!--resource="Product" typeof="wy:WhiskeyBourbon"-->
 										Bourbon
 									
 							
@@ -529,7 +529,7 @@
 				<label>
 					Age:
 				</label>
-				<span class="value" propery="wy:hasAge">
+				<span class="value" property="wy:hasAge">
 					12 Years
 				</span>
 			</td>
@@ -559,7 +559,7 @@
 				<label>
 					Bottle size:
 				</label>
-				<span class="value"> <span property="wy:hasBottleSize">
+				<span class="value"> <span property="wy:hasBottleSize" content="0.7">
 					0.7 
 				</span>l</span>
 			</td>
@@ -574,8 +574,8 @@
 							<label>
 								Bottler:
 							</label>
-							<span class="value">
-								<a href="/whisky-database/bottler/original-bottling.html" resource="wy:OriginalBottling" property="wy:bottlerType">Original bottling</a>
+							<span class="value" property="wy:hasOriginalBottling" resource="wy:OriginalBottling">
+								<a href="/whisky-database/bottler/original-bottling.html">Original bottling</a>
 							</span>
 						</td>
 				</tr>
@@ -628,14 +628,14 @@
 			</label>
 			<span class="value">
 				
-					
+                            <span property="wy:hasPostTreatment" resource="wy:ChillFiltration">
 							<img title="Chill filtration - With" alt="Chill filtration - With" src="/typo3conf/ext/datamints_whisky/Resources/Public/Icons/snowflake.png" width="16" height="17" />
-						
+                        </span>
 				
 				
-					
+                            <span property="wy:hasPostTreatment" resource="wy:WithArtificalColouring">
 							<img title="Artifical colouring - Without" alt="Artifical colouring - Without" src="/typo3conf/ext/datamints_whisky/Resources/Public/Icons/stain-crossed.png" width="20" height="20" />
-						
+                        </span>
 				
 			</span>
 		</td>
@@ -729,10 +729,11 @@
 			
 			
 		
-
-	<div class="row ">
+<span resource="Product">
+	<div class="row">
 		
-			<div class="col-md-4 group-divider group group-nosing">
+    
+			<div class="col-md-4 group-divider group group-nosing" property="wy:Nosing" typeof="wy:Taste">
 				<div
 						class="column-inner limit-children"
 						data-limit-children-count="4"
@@ -1204,9 +1205,11 @@
 							</div>
 						
 				</div>
-			</div>
-		
-			<div class="col-md-4 group-divider group group-tasting">
+            </div>
+            
+        
+        
+			<div class="col-md-4 group-divider group group-tasting" property="wy:Tasting" typeof="wy:Taste">
 				<div
 						class="column-inner limit-children"
 						data-limit-children-count="4"
@@ -1820,7 +1823,7 @@
 				</div>
 			</div>
 		
-			<div class="col-md-4 group-divider group group-finish">
+			<div class="col-md-4 group-divider group group-finish" property="wy:Finish" typeof="wy:Taste">
 				<div
 						class="column-inner limit-children"
 						data-limit-children-count="4"
@@ -1905,7 +1908,7 @@
 					<div class="rating " style="width: 150px;" title="Spices">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Spices_051ca7effc.png);"></div>
+							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Spices_051ca7effc.png);" property="wy:finishSpices" content="3.0"></div>
 						</div>
 					</div>
 				
@@ -1933,7 +1936,7 @@
 					<div class="rating " style="width: 150px;" title="Sweet">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Sugar_b30d84a0b8.png);"></div>
+							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Sugar_b30d84a0b8.png);" property="wy:finishSweetness" content="3.0"></div>
 						</div>
 					</div>
 				
@@ -1961,7 +1964,7 @@
 					<div class="rating " style="width: 150px;" title="Fruit">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 30%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Fruit_29397b6a63.png);"></div>
+							<div class="items active" style="width: 30%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Fruit_29397b6a63.png);" property="wy:finishFruit" content="1.5"></div>
 						</div>
 					</div>
 				
@@ -2244,7 +2247,7 @@
 			</td>
 		</tr>
 	</table>
-
+</span>
 </span>				
 
 					
