@@ -761,7 +761,7 @@
 					<div class="rating " style="width: 150px;" title="Oak">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Oak_62b51e1439.png);"></div>
+							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Oak_62b51e1439.png);" property="wy:nosingOak" content="5.0"></div>
 						</div>
 					</div>
 				
@@ -789,7 +789,7 @@
 					<div class="rating " style="width: 150px;" title="Vanilla">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Vanilla_8d4e369843.png);"></div>
+							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Vanilla_8d4e369843.png);" property="wy:nosingVanilla" content="5.0"></div>
 						</div>
 					</div>
 				
@@ -817,7 +817,7 @@
 					<div class="rating " style="width: 150px;" title="Sweet">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 50%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Sugar_b30d84a0b8.png);"></div>
+							<div class="items active" style="width: 50%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Sugar_b30d84a0b8.png);" property="wy:nosingSweet" content="2.5"></div>
 						</div>
 					</div>
 				
@@ -845,7 +845,7 @@
 					<div class="rating " style="width: 150px;" title="Fruit">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 40%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Fruit_29397b6a63.png);"></div>
+							<div class="items active" style="width: 40%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Fruit_29397b6a63.png);" property="wy:nosingFruit" content="2.0"></div>
 						</div>
 					</div>
 				
@@ -873,7 +873,7 @@
 					<div class="rating " style="width: 150px;" title="Mint">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 30%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Mint_4acbc8064b.png);"></div>
+							<div class="items active" style="width: 30%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Mint_4acbc8064b.png);" property="wy:nosingMint" content="1.5"></div>
 						</div>
 					</div>
 				
@@ -1235,7 +1235,7 @@
 					<div class="rating " style="width: 150px;" title="Oak">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Oak_62b51e1439.png);"></div>
+							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Oak_62b51e1439.png);" property="wy:tastingOak" content="5.0"></div>
 						</div>
 					</div>
 				
@@ -1263,7 +1263,7 @@
 					<div class="rating " style="width: 150px;" title="Spices">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Spices_051ca7effc.png);"></div>
+							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Spices_051ca7effc.png);" property="wy:tastingSpices" content="3.0"></div>
 						</div>
 					</div>
 				
@@ -1291,7 +1291,7 @@
 					<div class="rating " style="width: 150px;" title="Sweet">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Sugar_b30d84a0b8.png);"></div>
+							<div class="items active" style="width: 60%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Sugar_b30d84a0b8.png);" property="wy:tastingSweet" content="3.0"></div>
 						</div>
 					</div>
 				
@@ -1319,7 +1319,7 @@
 					<div class="rating " style="width: 150px;" title="Oil">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 40%; height: 30px;background-image: url(/fileadmin/_processed_/csm_GrainNuts_-_Oil_20e6836128.png);"></div>
+							<div class="items active" style="width: 40%; height: 30px;background-image: url(/fileadmin/_processed_/csm_GrainNuts_-_Oil_20e6836128.png);" property="wy:tastingOil" content="2.0"></div>
 						</div>
 					</div>
 				
@@ -1347,7 +1347,7 @@
 					<div class="rating " style="width: 150px;" title="Vanilla">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 30%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Vanilla_8d4e369843.png);"></div>
+							<div class="items active" style="width: 30%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Vanilla_8d4e369843.png);" property="wy:tastingVanilla" content="1.5"></div>
 						</div>
 					</div>
 				
@@ -1849,7 +1849,7 @@
 					<div class="rating " style="width: 150px;" title="Oak">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Oak_62b51e1439.png);"></div>
+							<div class="items active" style="width: 100%; height: 30px;background-image: url(/fileadmin/_processed_/csm_DarkFlavors_-_Oak_62b51e1439.png);" property="wy:finishOak" content="5.0"></div>
 						</div>
 					</div>
 				
@@ -1877,7 +1877,7 @@
 					<div class="rating " style="width: 150px;" title="Vanilla">
 						<div class="rating-inner">
 							<div class="items inactive" style="height: 30px;background-image: none;"></div>
-							<div class="items active" style="width: 70%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Vanilla_8d4e369843.png);"></div>
+							<div class="items active" style="width: 70%; height: 30px;background-image: url(/fileadmin/_processed_/csm_Sweet_-_Vanilla_8d4e369843.png);" property="wy:finishVanilla" content="3.5"></div>
 						</div>
 					</div>
 				

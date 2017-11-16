@@ -44,6 +44,12 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#hasBottlerType -->
+
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasBottlerType"/>
+    
+
+
     <!-- http://www.whisky.com/whiskey#hasColour -->
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasColour">
@@ -69,6 +75,12 @@
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Taste"/>
         <rdfs:range rdf:resource="http://www.whisky.com/whiskey#Taste"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#hasPostTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasPostTreatment"/>
     
 
 
@@ -1565,10 +1577,18 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#BottleType -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#BottleType">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.whisky.com/whiskey#Characteristics -->
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#Characteristics">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#DomainThing"/>
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
     </owl:Class>
     
 
@@ -1603,14 +1623,6 @@
     
 
 
-    <!-- http://www.whisky.com/whiskey#DomainThing -->
-
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#DomainThing">
-        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.whisky.com/whiskey#FinishingCask -->
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#FinishingCask">
@@ -1624,7 +1636,6 @@
     <!-- http://www.whisky.com/whiskey#Location -->
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#Location">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#DomainThing"/>
         <rdfs:comment>The location in which the whisky is produced</rdfs:comment>
     </owl:Class>
     
@@ -1635,6 +1646,14 @@
     <owl:Class rdf:about="http://www.whisky.com/whiskey#MaturingCask">
         <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
         <rdfs:isDefinedBy>The previous contents of the casks in which the whisky is stored</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#PostTreatment -->
+
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#PostTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#ValuePartition"/>
     </owl:Class>
     
 
@@ -1665,9 +1684,7 @@
 
     <!-- http://www.whisky.com/whiskey#Whiskey -->
 
-    <owl:Class rdf:about="http://www.whisky.com/whiskey#Whiskey">
-        <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#DomainThing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.whisky.com/whiskey#Whiskey"/>
     
 
 
@@ -1759,6 +1776,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Aberlour16YearsDoubleCask">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Aberlour"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Caramel"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Chocolate"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
@@ -2092,6 +2110,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#ChillFiltration -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#ChillFiltration">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#PostTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.whisky.com/whiskey#Chilli -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Chilli">
@@ -2215,6 +2241,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#ElijahCraig12Years">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyBourbon"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Heaven_Hill"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
@@ -2224,6 +2251,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Vanilla"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oil"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Spices"/>
@@ -2359,6 +2388,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#GeorgeDickelNo12">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyTennessee"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#George_Dickel"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Caramel"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Clove"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
@@ -2371,6 +2401,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Vanilla"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Caramel"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Malt"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
@@ -2553,6 +2585,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#HighlandPark18Years">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Highland_Park"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Honey"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oil"/>
@@ -2565,6 +2598,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Vanilla"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Honey"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oil"/>
@@ -2650,6 +2685,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#IndependentBottling -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#IndependentBottling">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#BottleType"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.whisky.com/whiskey#India -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#India">
@@ -2728,6 +2771,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Jameson">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyBlended"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Midleton"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Chilli"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oil"/>
@@ -2740,6 +2784,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Spices"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Vanilla"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Spices"/>
@@ -2789,6 +2835,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#JimBeam4YearsRyeYellowLabel">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyRye"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Jim_Beam"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Chilli"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Chocolate"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Malt"/>
@@ -2800,6 +2847,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Spices"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Wheat"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutArtificalColouring"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutChillFiltration"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Spices"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Sweet"/>
@@ -2980,8 +3029,11 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#MellowCorn4Years100Proof">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeyCorn"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Heaven_Hill"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Vanilla"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Alcohol"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oil"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Pepper"/>
@@ -3144,6 +3196,14 @@
     
 
 
+    <!-- http://www.whisky.com/whiskey#OriginalBottling -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#OriginalBottling">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#BottleType"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.whisky.com/whiskey#Pale_gold -->
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Pale_gold">
@@ -3246,6 +3306,7 @@
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySinglePotStill"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Midleton"/>
         <finishedIn rdf:resource="http://www.whisky.com/whiskey#Oloroso_sherry"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Pepper"/>
@@ -3259,6 +3320,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Spices"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Vanilla"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oil"/>
@@ -3412,6 +3475,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Suntory18YearsYamazaki">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Yamazaki"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Chocolate"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
@@ -3420,6 +3484,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Dried_fruit"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Oak"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#ChillFiltration"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithArtificalColouring"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Sherry"/>
@@ -3497,6 +3563,7 @@
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#TeelingSingleMalt">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#WhiskeySingleMalt"/>
         <distilledBy rdf:resource="http://www.whisky.com/whiskey#Teeling"/>
+        <hasBottlerType rdf:resource="http://www.whisky.com/whiskey#OriginalBottling"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Lemon"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Malt"/>
         <hasFinish rdf:resource="http://www.whisky.com/whiskey#Oak"/>
@@ -3505,6 +3572,8 @@
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Honey"/>
         <hasNosing rdf:resource="http://www.whisky.com/whiskey#Melon"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithArtificalColouring"/>
+        <hasPostTreatment rdf:resource="http://www.whisky.com/whiskey#WithoutChillFiltration"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Dried_fruit"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Fruit"/>
         <hasTasting rdf:resource="http://www.whisky.com/whiskey#Oak"/>
@@ -3664,6 +3733,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#Wild_Turkey">
         <rdf:type rdf:resource="http://www.whisky.com/whiskey#Distillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WithArtificalColouring -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#WithArtificalColouring">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#PostTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WithoutArtificalColouring -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#WithoutArtificalColouring">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#PostTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.whisky.com/whiskey#WithoutChillFiltration -->
+
+    <owl:NamedIndividual rdf:about="http://www.whisky.com/whiskey#WithoutChillFiltration">
+        <rdf:type rdf:resource="http://www.whisky.com/whiskey#PostTreatment"/>
     </owl:NamedIndividual>
     
 
