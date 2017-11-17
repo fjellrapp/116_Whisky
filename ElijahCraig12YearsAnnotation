@@ -343,7 +343,7 @@
 			<span property="ratingCount" content="155">(155)</span><span class="separator">,</span>
 		
 	</a>
-</span>
+
 		<a href="#geschmacksbeschreibungen_anchor" title="">
 			<img title="Tasting Notes" alt="Tasting Notes" src="/typo3conf/ext/datamints_whisky/Resources/Public/Libraries/other_whisky_resources/src/public/icons/pen-and-glass-orange.png" width="19" height="16" />
 			<!--Tasting Notes:-->
@@ -351,7 +351,7 @@
 		</a>
 									
 									
-											
+    										
 												<a class="btn btn-default small rate" href="/forumblogchat/login/register/register.html?no_cache=1">
 													<i class="icon icon-star"></i>
 													Rate
@@ -511,7 +511,7 @@
 					<label>
 						Type:
 					</label>
-					<span class="value" resource="Product" typeof="wy:WhiskeyBourbon">
+					<span class="value" resource="Product"typeof="wy:WhiskeyBourbon">
 						
                             <!--resource="Product" typeof="wy:WhiskeyBourbon"-->
 										Bourbon
@@ -729,10 +729,10 @@
 			
 			
 		
-<span resource="Product">
+    
 	<div class="row">
 		
-    
+            <span property="wy:Taste" resource="#AverageTastingNotes">
 			<div class="col-md-4 group-divider group group-nosing" property="wy:Nosing" typeof="wy:Taste">
 				<div
 						class="column-inner limit-children"
@@ -766,7 +766,8 @@
 						</div>
 					</div>
 				
-										</div>
+                                        </div>
+            </span>
 									
 
 									<!-- Rating: 2.234 -->
@@ -969,7 +970,9 @@
 									<!-- Rating Global: 0.5675 -->
 								
 							
-						</div>
+                        </div>
+                        
+                    </span>
 					
 						<div class="item tasteicon-statistic">
 							
@@ -2247,8 +2250,10 @@
 			</td>
 		</tr>
 	</table>
-</span>
-</span>				
+
+
+</span>		
+</span>		
 
 					
 
