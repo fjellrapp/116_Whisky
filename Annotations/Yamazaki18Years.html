@@ -48,266 +48,6 @@
 
 			</script>
 
-<script>
-{
-"@context": {
-	"og": "http://ogp.me/ns#",
-	"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-	"rdfa": "http://www.w3.org/ns/rdfa#",
-	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-	"schema": "http://schema.org/",
-	"wy": "http://www.whisky.com/whiskey#",
-	"xsd": "http://www.w3.org/2001/XMLSchema#"
-},
-"@graph": [
-	{
-		"@id": "wy:hasNosing",
-		"@type": "wy:Taste",
-		"wy:hasNosing": [
-			{
-				"@id": "wy:Oak"
-			},
-			{
-				"@id": "wy:Mint"
-			},
-			{
-				"@id": "wy:Fruit"
-			},
-			{
-				"@id": "wy:Vanilla"
-			},
-			{
-				"@id": "wy:Sweet"
-			}
-		],
-		"wy:nosingFruit": {
-			"@language": "en",
-			"@value": "2.0"
-		},
-		"wy:nosingMint": {
-			"@language": "en",
-			"@value": "1.5"
-		},
-		"wy:nosingOak": {
-			"@language": "en",
-			"@value": "5.0"
-		},
-		"wy:nosingSweet": {
-			"@language": "en",
-			"@value": "2.5"
-		},
-		"wy:nosingVanilla": {
-			"@language": "en",
-			"@value": "5.0"
-		}
-	},
-	{
-		"@id": "wy:hasTasting",
-		"@type": "wy:Taste",
-		"wy:hasTasting": [
-			{
-				"@id": "wy:Spices"
-			},
-			{
-				"@id": "wy:Oil"
-			},
-			{
-				"@id": "wy:Oak"
-			},
-			{
-				"@id": "wy:Vanilla"
-			},
-			{
-				"@id": "wy:Sweet"
-			}
-		],
-		"wy:tastingOak": {
-			"@language": "en",
-			"@value": "5.0"
-		},
-		"wy:tastingOil": {
-			"@language": "en",
-			"@value": "2.0"
-		},
-		"wy:tastingSpices": {
-			"@language": "en",
-			"@value": "3.0"
-		},
-		"wy:tastingSweet": {
-			"@language": "en",
-			"@value": "3.0"
-		},
-		"wy:tastingVanilla": {
-			"@language": "en",
-			"@value": "1.5"
-		}
-	},
-	{
-		"@id": "https://rdfa.info/play/#geschmacksbeschreibungen_anchor",
-		"@type": "schema:AggregateRating",
-		"schema:ratingCount": {
-			"@language": "en",
-			"@value": "155"
-		},
-		"schema:ratingValue": {
-			"@language": "en",
-			"@value": "3.8"
-		}
-	},
-	{
-		"@id": "wy:hasFinish",
-		"@type": "wy:Taste",
-		"wy:finishFruit": {
-			"@language": "en",
-			"@value": "1.5"
-		},
-		"wy:finishOak": {
-			"@language": "en",
-			"@value": "5.0"
-		},
-		"wy:finishSpices": {
-			"@language": "en",
-			"@value": "3.0"
-		},
-		"wy:finishSweetness": {
-			"@language": "en",
-			"@value": "3.0"
-		},
-		"wy:finishVanilla": {
-			"@language": "en",
-			"@value": "3.5"
-		},
-		"wy:hasFinish": [
-			{
-				"@id": "wy:Sweet"
-			},
-			{
-				"@id": "wy:Oak"
-			},
-			{
-				"@id": "wy:Spices"
-			},
-			{
-				"@id": "wy:Vanilla"
-			},
-			{
-				"@id": "wy:Fruit"
-			}
-		]
-	},
-	{
-		"@id": "https://rdfa.info/play/",
-		"og:description": {
-			"@language": "en",
-			"@value": "This small batch bourbon is bottled from specially selected casks. Usually the master distiller selects no more than 50-75 casks from the middle level of the warehouse."
-		},
-		"og:image": [
-			{
-				"@language": "en",
-				"@value": "https://www.whisky.com/typo3temp/GB/ca549e962b.jpg"
-			},
-			{
-				"@language": "en",
-				"@value": "https://www.whisky.com/typo3temp/GB/c269373114.jpg"
-			}
-		],
-		"og:title": {
-			"@language": "en",
-			"@value": "Elijah Craig 12 Years"
-		},
-		"og:url": {
-			"@language": "en",
-			"@value": "https://www.whisky.com/whisky-database/details/elijah-craig-1.html"
-		},
-		"rdfa:usesVocabulary": {
-			"@id": "schema:"
-		},
-		"schema:publisher": [
-			{
-				"@id": "https://plus.google.com/117462760640365920862"
-			},
-			{
-				"@id": "https://www.facebook.com/whiskyspirits"
-			},
-			{
-				"@id": "https://twitter.com/whisky_com"
-			}
-		]
-	},
-	{
-		"@id": "https://rdfa.info/play/Product",
-		"@type": "wy:WhiskeyBourbon",
-		"schema:Brand": {
-			"@language": "en",
-			"@value": "  Elijah Craig   12 Years      "
-		},
-		"schema:aggregateRating": {
-			"@id": "https://rdfa.info/play/#geschmacksbeschreibungen_anchor"
-		},
-		"schema:bottlebox": [
-			{
-				"@id": "https://rdfa.info/typo3temp/GB/c269373114.jpg"
-			},
-			{
-				"@id": "https://rdfa.info/typo3temp/GB/ca549e962b.jpg"
-			}
-		],
-		"schema:description": {
-			"@language": "en",
-			"@value": "\n\t\t\t\t\t\t\t\t\tThis small batch bourbon is bottled from specially selected casks. Usually the master distiller selects no more than 50-75 casks from the middle level of the warehouse.\n\t\t\t\t\t\t\t\t"
-		},
-		"wy:Finish": {
-			"@id": "wy:hasFinish"
-		},
-		"wy:Nosing": {
-			"@id": "wy:hasNosing"
-		},
-		"wy:Tasting": {
-			"@id": "wy:hasTasting"
-		},
-		"wy:alcoholPercentage": {
-			"@language": "en",
-			"@value": "47"
-		},
-		"wy:distilledBy": {
-			"@id": "wy:Aberlour"
-		},
-		"wy:hasAge": {
-			"@language": "en",
-			"@value": "\n\t\t\t\t\t12 Years\n\t\t\t\t"
-		},
-		"wy:hasBottleSize": {
-			"@language": "en",
-			"@value": "0.7"
-		},
-		"wy:hasMaturing": {
-			"@id": "wy:VirginAmericanWhiteOak"
-		},
-		"wy:hasOriginalBottling": {
-			"@id": "wy:OriginalBottling"
-		},
-		"wy:hasPostTreatment": [
-			{
-				"@id": "wy:ChillFiltration"
-			},
-			{
-				"@id": "wy:WithArtificalColouring"
-			}
-		],
-		"wy:producedInCountry": {
-			"@id": "wy:USA"
-		},
-		"wy:producedInRegion": {
-			"@id": "wy:Kentucky"
-		},
-		"wy:whiskey-Id": {
-			"@language": "en",
-			"@value": "1699"
-		}
-	}
-]
-}
-</script>
 
 		<meta name="description" content="" />
 
@@ -590,7 +330,7 @@
 									<!--Rating:-->
 
 
-<a href="#geschmacksbeschreibungen_anchor" title="" property="aggregateRating" typeof="AggregateRating">
+-<a href="#geschmacksbeschreibungen_anchor" title="" property="Product" resource="aggregateRating">
 
 					<div class="rating value-title" style="" title="Rating">
 						<div class="rating-inner">
@@ -599,13 +339,15 @@
 						</div>
 					</div>
 
-
-				<span property="ratingValue" content="4.8"> 4.8</span>
-
+<span property="aggregateRating" typeof="AggregateRating">
+				<span property="ratingValue" content="4.8">4.8</span>
 
 			<span property="ratingCount" content="55">(55)</span><span class="separator">,</span>
+</span>
+</a>
 
-	</a>
+
+
 
 		<a href="#geschmacksbeschreibungen_anchor" title="">
 			<img title="Tasting Notes" alt="Tasting Notes" src="/typo3conf/ext/datamints_whisky/Resources/Public/Libraries/other_whisky_resources/src/public/icons/pen-and-glass-orange.png" width="19" height="16" />
