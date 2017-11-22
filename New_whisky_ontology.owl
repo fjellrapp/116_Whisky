@@ -56,6 +56,7 @@
     <!-- http://www.whisky.com/whiskey#hasColour -->
 
     <owl:ObjectProperty rdf:about="http://www.whisky.com/whiskey#hasColour">
+        <rdfs:subPropertyOf rdf:resource="http://www.whisky.com/whiskey#hasFinish"/>
         <rdfs:domain rdf:resource="http://www.whisky.com/whiskey#Whiskey"/>
         <rdfs:range rdf:resource="http://www.whisky.com/whiskey#ColorNuances"/>
     </owl:ObjectProperty>
@@ -3885,6 +3886,14 @@
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#FinishingCask"/>
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#MaturingCask"/>
             <rdf:Description rdf:about="http://www.whisky.com/whiskey#PostTreatment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Location"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#ValuePartition"/>
+            <rdf:Description rdf:about="http://www.whisky.com/whiskey#Whiskey"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
