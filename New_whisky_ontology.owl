@@ -1614,6 +1614,7 @@
 
     <owl:Class rdf:about="http://www.whisky.com/whiskey#Country">
         <rdfs:subClassOf rdf:resource="http://www.whisky.com/whiskey#Location"/>
+        <owl:disjointWith rdf:resource="http://www.whisky.com/whiskey#Region"/>
         <rdfs:comment>The whiskey&apos;s country of origin</rdfs:comment>
     </owl:Class>
     
